@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+
+    <link href="../static/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="weatherForm">
+        <form method="POST" action="" class="form">
+            <input type="text" id="city" name="city" placeholder="Your city...">
+            <button id="check" onclick="checkWeather()">Check</button>
+        </form>
+        <div class="info">
+
+            <div><p class="label">City</p> <p class="res">{{ city }}</p></div>
+            <div><p class="label">Description</p> <p class="res">{{ desc }}</p></div>
+            <div><p class="label">Temperature</p> <p class="res">Approx. {{ temp }}</p></div>
+            <div><p class="label">Humidity</p> <p class="res">{{ humid }}%</p></div>
+        </div>
+    </div>
+
+    <script>
+
+        function checkWeather(){
+            let city = document.getElementById('city').value
+            console.log(city)
+            city.innerHTML =""
+        }
+        
+    </script>
+</body>
+</html>
