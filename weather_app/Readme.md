@@ -1,7 +1,5 @@
 ## Weather_App
 
-## About this web app
-
 This web application tells the weather of the specified city. 
 
 1. User just have to enter any city name for example London here
