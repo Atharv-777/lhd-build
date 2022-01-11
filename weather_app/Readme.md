@@ -18,7 +18,7 @@ This web application tells the weather of the specified city.
 <a href="https://palletsprojects.com/p/flask/"> <img width="32" height="40" align="left" alt="Flask "  src="static/icons/flask.png" /> </a>
 <a href="https://www.python.org/about/"> <img align="left" alt="Python"  src="static/icons/python.png" /> </a> 
 <img width="50" height="32" align="left" alt="HTML5"  src="static/icons/html5.png" />
-<img width="32" height="40" align="left" alt="CSS3"  src="static/icons/css3.png" />
+<img width="32" height="40" align="left" alt="CSS3"  src="static/icons/css.png" />
 <a href="https://code.visualstudio.com/docs"> <img width="40" height="40" align="left" alt="VSCode"  src="static/icons/vscode.png" /> </a>
 <br>
 
