@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>topNews</title>
+
+    <link href="../static/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="newsCards" onclick="location.href='{{ url[0] }}';">
+            <img class="newsImg">
+            <p class="newsTitle"></p>
+        </div>
+        <div class="newsCards" onclick="location.href='{{ url[1] }}';">
+            <img class="newsImg">
+            <p class="newsTitle"></p>
+        </div>
+        <div class="newsCards" onclick="location.href='{{ url[2] }}';">
+            <img class="newsImg">
+            <p class="newsTitle"></p>
+        </div>
+        <div class="newsCards" onclick="location.href='{{ url[3] }}';">
+            <img class="newsImg">
+            <p class="newsTitle"></p>
+        </div>
+        <div class="newsCards" onclick="location.href='{{ url[4] }}';">
+            <img class="newsImg">
+            <p class="newsTitle"></p>
+        </div>
+        <div class="newsCards" onclick="location.href='{{ url[5] }}';">
+            <img class="newsImg">
+            <p class="newsTitle"></p>
+        </div>
+        
+    </div>
+
+    <script>
+        let img = JSON.parse('{{ img | tojson | safe}}');
+        let title = JSON.parse('{{ title | tojson | safe}}');
+        let url = JSON.parse('{{ url | tojson | safe}}');
+        let link = document.getElementsByClassName('link')
+        let newsImg = document.getElementsByClassName('newsImg')
+        let newsTitle = document.getElementsByClassName('newsTitle');
+
+        console.log(url[0])
+        for(let i = 0; i < newsImg.length; i++){
+            newsImg[i].src = img[i]
+            newsTitle[i].innerHTML = title[i]
+        }
+
+
+        
+    </script>
+</body>
+</html>
